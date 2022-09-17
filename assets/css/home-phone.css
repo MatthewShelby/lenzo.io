@@ -10,6 +10,7 @@
       /* scale: 0.4; */
       max-width: 150%;
       opacity: 0.4;
+      z-index: -2;
 }
 
 
@@ -38,6 +39,7 @@
 .my-menu {
       color: rgb(42, 208, 210);
       font-size: 300% !important;
+      max-width: 100%;
 }
 
 .topnav {
