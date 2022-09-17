@@ -5,9 +5,6 @@
 
 #g-img-phone {
       position: absolute;
-      /* left: 6vw; */
-      /* top: -36vh; */
-      /* scale: 0.4; */
       max-width: 150%;
       opacity: 0.4;
       z-index: -2;
@@ -20,26 +17,22 @@
       /* max-width: 59%; */
 }
 
-.logo-phone-frame {
-      width: 40%;
-}
 
 .logo-phone {
-      max-width: 100%;
+      max-width: 60%;
       /* max-height: 5vh; */
 }
 
-.menu-btn {
-      width: fit-content;
-      margin: 0px;
-}
-
-
-
 .my-menu {
       color: rgb(42, 208, 210);
-      font-size: 300% !important;
-      max-width: 100%;
+      font-size: 16vw !important;
+      margin: 0;
+      position: absolute;
+      /* top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); */
+      /* top: 50%; */
+      /* max-width: 100%; */
 }
 
 .topnav {
@@ -79,6 +72,7 @@
       position: sticky !important;
       text-align: center;
       align-content: center;
+
 }
 
 .menu-item-phone {
@@ -87,4 +81,21 @@
 
 .bx-my-phone {
       font-size: 20px;
+}
+
+
+
+.part1-h1-phone {
+      font-family: kameron;
+      font-size: 11vw;
+}
+
+.img-2-phone {
+      max-width: 100%;
+      margin: auto;
+      scale: 2;
+      margin-bottom: -10vh;
+      /* width: 58vw; */
+      /* margin-left: -8vw;
+      margin-top: -22vh; */
 }

@@ -59,13 +59,13 @@
 
 
       <!-- globe background -->
-      <div class=" d-none d-lg-block">
+      <div class="d-none d-lg-block">
             <div id="g-12">
                   <img src="assets/images/Elements/Group-12.png" alt="" id="g-12-img">
             </div>
       </div>
 
-      <div class="d-lg-none">
+      <div class="d-md-block d-lg-none">
             <div id="g-12-phone">
                   <img src="assets/images/Elements/Group-12.png" alt="" id="g-img-phone">
             </div>
@@ -154,52 +154,52 @@
 
 
             <!-- Phone nav -->
-            <div class="topnav row justify-content-between d-lg-none col-12">
-                  <div class="logo-phone-frame">
-                        <img class="logo-phone" src="assets/images/Elements/Lenzo logo.png" alt="">
+            <div class="container  d-md-block d-lg-none">
+                  <div class=" row col-12 justify-content-between">
+                        <div class="col-10">
+                              <img class="logo-phone" src="assets/images/Elements/Lenzo logo.png" alt="">
+                        </div>
+                        <div class="col-2">
+                              <a href="javascript:void(0);" onclick="openPhoneMenu()" id="menu-a"
+                                    style="width: fit-content; min-height: fit-content;">
+                                    <i class='bx bx-menu my-menu'></i>
+                              </a>
+                        </div>
                   </div>
-                  <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()" id="menu-a">
-                        <i class='bx bx-menu my-menu'></i>
-                  </a>
-
-
-
-
             </div>
-            <div id="myLinks" class="dropdown-content dropdown-content-phone">
+
+            <div class="container  d-md-block d-lg-none">
+
+                  <div id="myLinks" class="dropdown-content dropdown-content-phone">
 
 
-                  <div class="menu-item-phone">Finance
-                        <i class='bx bx-my-phone bx-chevron-down'></i>
-                  </div>
+                        <div class="menu-item-phone">Finance
+                              <i class='bx bx-my-phone bx-chevron-down'></i>
+                        </div>
 
-                  <div class="menu-item-phone">Features
-                        <i class='bx bx-my-phone bx-chevron-down'></i>
-                  </div>
+                        <div class="menu-item-phone">Features
+                              <i class='bx bx-my-phone bx-chevron-down'></i>
+                        </div>
 
-                  <div class="menu-item-phone">Club
-                        <i class='bx bx-my-phone bx-chevron-down'></i>
-                  </div>
-                  <div class="menu-item-phone">Roadmap
-                        <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
-                  </div>
-                  <div class="menu-item-phone">Whitepaper
-                        <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
+                        <div class="menu-item-phone">Club
+                              <i class='bx bx-my-phone bx-chevron-down'></i>
+                        </div>
+                        <div class="menu-item-phone">Roadmap
+                              <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
+                        </div>
+                        <div class="menu-item-phone">Whitepaper
+                              <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
+                        </div>
                   </div>
             </div>
             <script>
-                  function myFunction() {
+                  function openPhoneMenu() {
                         var x = document.getElementById("myLinks");
 
                         if (x.style.display === "block") {
                               x.style.display = "none";
                         } else {
-                              // setTimeout(() => {
-                              //       x.style.display = "block";
-
-                              // }, 100);
                               x.style.display = "block";
-
                         }
                   }
                   document.addEventListener('click', function (e) {
@@ -212,35 +212,7 @@
                         }
                   })
             </script>
-            <!-- <div class="col-9 row float-end justify-content-end">
-                                          <div class=" menu-head-item d-flex align-items-center dropbtn   " onclick="myFunction()">
-            
-                                                Finance
-                                                <i class="bx bx-chevron-down dropbtn"></i>
-            
-            
-                                                <div id="myDropdown" class="dropdown-content">
-                                                      <a href="#swap" class="menu-sub-item">Swap</a>
-                                                      <a href="#staking" class="menu-sub-item">Staking</a>
-                                                      <a href="#tokenomics" class="menu-sub-item">Tokenomics</a>
-                                                      <a href="#toekn-value" class="menu-sub-item">Toekn Value</a>
-                                                      <a href="#transactions" class="menu-sub-item">Transactions</a>
-                                                </div>
-            
-                                          </div>
-            
-                                          <div class="menu-head-item d-flex align-items-center">Features
-                                                <i class='bx bx-chevron-down'></i>
-                                          </div>
-            
-                                          <div class="menu-head-item d-flex align-items-center">Club <i
-                                                      class='bx bx-chevron-down'></i></div>
-                                          <div class="menu-head-item d-flex align-items-center">Roadmap <i
-                                                      class='bx bx-chevron-down'></i></div>
-                                          <div class="menu-head-item d-flex align-items-center">Whitepaper <i
-                                                      class='bx bx-chevron-down'></i></div>
-            
-                                    </div> -->
+
       </div>
 
 
@@ -253,20 +225,26 @@
             <div class="col-10 test ">
 
                   <div class="head-content">
-                        <h1 class="text part1-h1"> Community Participation <br>
+                        <h1 class="text part1-h1-phone d-md-block d-lg-none"> Community Participation <br>
                               Profit-Making <br>
                               Benefits For <span> Holders </span><br>
                         </h1>
-                        <div class=" btn-box d-flex my-4">
-                              <button type="button" class="btn1">Pre - sale</button>
+                        <h1 class="text part1-h1 d-none d-lg-block"> Community Participation <br>
+                              Profit-Making <br>
+                              Benefits For <span> Holders </span><br>
+                        </h1>
+                        <div class="  d-flex ">
+                              <button type="button" class="btn1">Pre-sale</button>
                               <button type="button" class="btn2">Metaverse </button>
                         </div>
+                        <br>
                         <p class="text"> “Lenz” is an approved BEP20+ security crypto token. It can <br> unrestrictedly
                               be
                               transferred or
                               swapped
                               into all other
-                              cryptocurrencies. Your screen width is: <span id="width"></span> and your screen height
+                              cryptocurrencies. </p>
+                        <!-- <p>Your screen width is: <span id="width"></span> and your screen height
                               is: <span id="height"></span></p>
                         <p>Test ov col visibility:</p>
                         <p class="d-block d-sm-none">Paragraph 1 <span> Visible only on xs </span></p>
@@ -274,6 +252,10 @@
                         <p class="d-none d-md-block d-lg-none">Paragraph 3 <span> Visible only on md </span></p>
                         <p class="d-none d-lg-block d-xl-none">Paragraph 4 <span> Visible only on lg </span></p>
                         <p class="d-none d-xl-block">Paragraph 5 <span> Visible only on xl </span></p>
+                        <p class=" d-md-block d-lg-none">Paragraph 6 <span> Visible on xs, sm, md </span></p>
+                        <p class="d-none d-lg-block ">Paragraph 7 <span> Visible on lg, xl </span></p> -->
+
+
                   </div>
 
 
@@ -321,12 +303,15 @@
             <div class="col-10 test">
                   <!-- font is kameron -->
                   <div class="row ">
-                        <div class="col-6">
-                              <div>
-                                    <img class="img-2" src="./assets/images/Objects/CIty-Object.png" alt="">
+                        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 col-md-12">
+                              <div class="d-none d-lg-block ">
+                                    <img class="img-2 " src="./assets/images/Objects/CIty-Object.png" alt="">
+                              </div>
+                              <div class="d-md-block d-lg-none ">
+                                    <img class="img-2-phone " src="./assets/images/Objects/CIty-Object.png" alt="">
                               </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 col-md-12">
                               <div class="content-2">
                                     <h2 class="text"> Do <span> Virtual Work </span> in the <br> virtual world.
                                           Make <br> <span> Real Money </span> for the <br> real life.</h2>
@@ -350,10 +335,10 @@
                         <img class="img-bg2" src="assets/images/Elements/Rectangle 8.png" alt="">
                   </div>
                   <!-- <div class="hight-30vh"></div> -->
-
+                  <br>
                   <div class="row  justify-content-center">
 
-                        <div class="col-5  card-out">
+                        <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
                               <div class="card-p3 center-all ">
 
                                     <div class="card-img-frame row center-all">
@@ -386,8 +371,14 @@
                               </div>
                         </div>
 
+                        <div class="d-md-block d-lg-none ">
+                              <br>
+                              <br>
+                              <br>
+                              <br>
+                        </div>
 
-                        <div class="col-5  card-out">
+                        <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
                               <div class="card-p3 center-all ">
 
                                     <div class="card-img-frame row center-all">
@@ -421,10 +412,15 @@
                               </div>
                         </div>
                   </div>
-
+                  <div class="d-md-block d-lg-none ">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                  </div>
                   <div class="row  justify-content-center">
 
-                        <div class="col-5  card-out">
+                        <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
                               <div class="card-p3 center-all ">
 
                                     <div class="card-img-frame row center-all">
@@ -458,8 +454,13 @@
                               </div>
                         </div>
 
-
-                        <div class="col-5  card-out">
+                        <div class="d-md-block d-lg-none ">
+                              <br>
+                              <br>
+                              <br>
+                              <br>
+                        </div>
+                        <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
                               <div class="card-p3 center-all ">
 
                                     <div class="card-img-frame row center-all">
@@ -508,26 +509,23 @@
             <div class="col-1 test"></div>
             <div class="col-10 test">
                   <div class="row part-4">
-                        <div class="col-8">
-                              <h1 class="text part4-h1"> Enter the metaverse <br> of decentralized <br> Finances.</h1>
+                        <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12 col-md-12 ">
+                              <h1 class="text part4-h1"> Enter the metaverse of decentralized Finances.</h1>
                               <p class="text text-part4"> Lenzo.io provides infrastructure and services to make crypto
-                                    <br>
+
                                     transactions
                                     easier. The process of participation in
                                     the
-                                    presale <br> is easy with just a few clicks. Alongside this, we invite you to <br>
+                                    presale is easy with just a few clicks. Alongside this, we invite you to
                                     check
                                     the whitepaper, road map, and all
                                     of the
-                                    Tokenomics <br> and financial documents here...
+                                    Tokenomics and financial documents here...
                               </p>
-                              <div class="box-btn-2 text-center mt-5">
-                                    <button type="button" class="btn-3">BUY</button>
-                                    <button type="button" class="btn-4">Documents</button>
 
-                              </div>
                         </div>
-                        <div class="col-4 d-flex flex-column align-items-center mt-3">
+                        <div
+                              class="col-md-4 col-lg-4 col-xs-12 col-sm-12 col-md-12 d-flex flex-column align-items-center mt-3">
                               <h1 class="part4-h1"> $410K+</h1>
                               <p class="text fw-bold "> 24 Hours trade volume </p>
 
@@ -536,6 +534,11 @@
 
                               <h1 class="part4-h1 mt-3">3k+</h1>
                               <p class="text fw-bold">Token hotels</p>
+                        </div>
+                        <div class="box-btn-2  mt-5">
+                              <button type="button" class="btn-3">BUY</button>
+                              <button type="button" class="btn-4">Documents</button>
+
                         </div>
                   </div>
             </div>

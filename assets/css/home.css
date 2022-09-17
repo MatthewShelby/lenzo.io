@@ -49,18 +49,21 @@
 
 .btn1 {
       border-radius: 30px !important;
-      padding: 10px 60px !important;
+      /* padding: 10px 60px !important; */
+      padding: 10px 8vw !important;
       background-color: rgb(42, 208, 210);
       color: white;
       margin-right: 15px;
       font-family: roboto;
-      font-size: larger;
+      /* font-size: larger; */
+      font-size: 1.2rem;
       font-weight: 700;
 }
 
 .btn2 {
       border-radius: 30px;
-      padding: 10px 60px;
+      /* padding: 10px 60px; */
+      padding: 10px 8vw;
       border-color: rgb(42, 208, 210);
       background-color: #000000;
       color: white;
@@ -103,6 +106,7 @@
       margin-left: -8vw;
       margin-top: -22vh;
 }
+
 
 .img-bg2 {
       margin-top: -57vh;
@@ -260,4 +264,5 @@
 
 .text-part4 {
       margin-top: 9vh;
+      max-width: 80%;
 }
