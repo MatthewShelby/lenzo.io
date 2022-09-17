@@ -46,6 +46,7 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <link href="assets/css/home.css" rel="stylesheet">
+      <link href="assets/css/home-phone.css" rel="stylesheet">
       <link href="assets/css/style.css" rel="stylesheet">
       <link href="assets/css/fonts.css" rel="stylesheet">
       <link href="assets/css/nav.css" rel="stylesheet">
@@ -58,8 +59,16 @@
 
 
       <!-- globe background -->
-      <div id="g-12">
-            <img src="assets/images/Elements/Group-12.png" alt="" id="g-12-img">
+      <div class=" d-none d-lg-block">
+            <div id="g-12">
+                  <img src="assets/images/Elements/Group-12.png" alt="" id="g-12-img">
+            </div>
+      </div>
+
+      <div class="d-lg-none">
+            <div id="g-12-phone">
+                  <img src="assets/images/Elements/Group-12.png" alt="" id="g-img-phone">
+            </div>
       </div>
 
 
@@ -67,7 +76,11 @@
       <script>
             /* When the user clicks on the button, 
             toggle between hiding and showing the dropdown content */
-            function myFunction() {
+            function myFunction2() {
+                  console.log('open finence')
+            }
+            function openFinance() {
+                  console.log('open finence')
                   document.getElementById("myDropdown").classList.toggle("show");
             }
 
@@ -88,47 +101,146 @@
 
       <!-- navigation bar -->
       <div class=" row fixed-top nav">
-
-            <div class="col-1 test"> </div>
-            <div class="col-10 test ">
-                  <div class="col-12 row">
-                        <div class="col-3 "> <img class="logo" src="assets/images/Elements/Lenzo logo.png" alt=""></div>
-
-                        <div class="col-9 row float-end justify-content-end">
-                              <div class=" menu-head-item d-flex align-items-center dropbtn   " onclick="myFunction()">
-
-                                    Finance
-                                    <i class="bx bx-chevron-down dropbtn"></i>
-
-
-                                    <div id="myDropdown" class="dropdown-content">
-                                          <a href="#swap" class="menu-sub-item">Swap</a>
-                                          <a href="#staking" class="menu-sub-item">Staking</a>
-                                          <a href="#tokenomics" class="menu-sub-item">Tokenomics</a>
-                                          <a href="#toekn-value" class="menu-sub-item">Toekn Value</a>
-                                          <a href="#transactions" class="menu-sub-item">Transactions</a>
+            <!-- Desktop nav -->
+            <div class=" d-none d-lg-block   justify-content-center">
+                  <div class="row ">
+                        <div class="col-1 test">
+                        </div>
+                        <div class="col-10 test center-centery">
+                              <div class="col-12 row justify-content-between">
+                                    <div class="col-3 "> <img class="logo" src="assets/images/Elements/Lenzo logo.png"
+                                                alt="">
                                     </div>
 
+
+                                    <div class="col-9 row float-end justify-content-end">
+                                          <div class=" menu-head-item d-flex align-items-center dropbtn   "
+                                                onclick="openFinance()">
+
+                                                Finance
+                                                <i class="bx bx-nav bx-chevron-down dropbtn"></i>
+
+
+                                                <div id="myDropdown" class="dropdown-content">
+                                                      <a href="#swap" class="menu-sub-item">Swap</a>
+                                                      <a href="#staking" class="menu-sub-item">Staking</a>
+                                                      <a href="#tokenomics" class="menu-sub-item">Tokenomics</a>
+                                                      <a href="#toekn-value" class="menu-sub-item">Toekn Value</a>
+                                                      <a href="#transactions" class="menu-sub-item">Transactions</a>
+                                                </div>
+
+                                          </div>
+
+                                          <div class="menu-head-item d-flex align-items-center">Features
+                                                <i class='bx bx-nav  bx-chevron-down'></i>
+                                          </div>
+
+                                          <div class="menu-head-item d-flex align-items-center">Club <i
+                                                      class='bx bx-nav  bx-chevron-down'></i></div>
+                                          <div class="menu-head-item d-flex align-items-center">Roadmap <i
+                                                      class='bx bx-nav  bx-chevron-down'></i></div>
+                                          <div class="menu-head-item d-flex align-items-center">Whitepaper <i
+                                                      class='bx bx-nav  bx-chevron-down'></i></div>
+
+                                    </div>
+
+
                               </div>
-
-                              <div class="menu-head-item d-flex align-items-center">Features
-                                    <i class='bx bx-chevron-down'></i>
-                              </div>
-
-                              <div class="menu-head-item d-flex align-items-center">Club <i
-                                          class='bx bx-chevron-down'></i></div>
-                              <div class="menu-head-item d-flex align-items-center">Roadmap <i
-                                          class='bx bx-chevron-down'></i></div>
-                              <div class="menu-head-item d-flex align-items-center">Whitepaper <i
-                                          class='bx bx-chevron-down'></i></div>
-
                         </div>
+                        <!-- <div class="col-1 test"> </div> -->
                   </div>
             </div>
-            <div class="col-1 test"> </div>
-            <!-- <div id="showHeight" class="fixed-top col-1">
-                  ?
-            </div> -->
+
+
+
+            <!-- Phone nav -->
+            <div class="topnav row justify-content-between d-lg-none">
+                  <div class="logo-phone-frame">
+                        <img class="logo-phone" src="assets/images/Elements/Lenzo logo.png" alt="">
+                  </div>
+                  <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()" id="menu-a">
+                        <i class='bx bx-menu my-menu'></i>
+                  </a>
+
+
+
+
+            </div>
+            <div id="myLinks" class="dropdown-content dropdown-content-phone">
+
+
+                  <div class="menu-item-phone">Finance
+                        <i class='bx bx-my-phone bx-chevron-down'></i>
+                  </div>
+
+                  <div class="menu-item-phone">Features
+                        <i class='bx bx-my-phone bx-chevron-down'></i>
+                  </div>
+
+                  <div class="menu-item-phone">Club
+                        <i class='bx bx-my-phone bx-chevron-down'></i>
+                  </div>
+                  <div class="menu-item-phone">Roadmap
+                        <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
+                  </div>
+                  <div class="menu-item-phone">Whitepaper
+                        <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
+                  </div>
+            </div>
+            <script>
+                  function myFunction() {
+                        var x = document.getElementById("myLinks");
+
+                        if (x.style.display === "block") {
+                              x.style.display = "none";
+                        } else {
+                              // setTimeout(() => {
+                              //       x.style.display = "block";
+
+                              // }, 100);
+                              x.style.display = "block";
+
+                        }
+                  }
+                  document.addEventListener('click', function (e) {
+                        var x = document.getElementById("myLinks");
+                        if (!x.contains(e.target) && (!document.getElementById('menu-a').contains(e.target))) {
+                              if (x.style.display === "block") {
+                                    x.style.display = "none";
+                                    //console.info(e.target)
+                              }
+                        }
+                  })
+            </script>
+            <!-- <div class="col-9 row float-end justify-content-end">
+                                          <div class=" menu-head-item d-flex align-items-center dropbtn   " onclick="myFunction()">
+            
+                                                Finance
+                                                <i class="bx bx-chevron-down dropbtn"></i>
+            
+            
+                                                <div id="myDropdown" class="dropdown-content">
+                                                      <a href="#swap" class="menu-sub-item">Swap</a>
+                                                      <a href="#staking" class="menu-sub-item">Staking</a>
+                                                      <a href="#tokenomics" class="menu-sub-item">Tokenomics</a>
+                                                      <a href="#toekn-value" class="menu-sub-item">Toekn Value</a>
+                                                      <a href="#transactions" class="menu-sub-item">Transactions</a>
+                                                </div>
+            
+                                          </div>
+            
+                                          <div class="menu-head-item d-flex align-items-center">Features
+                                                <i class='bx bx-chevron-down'></i>
+                                          </div>
+            
+                                          <div class="menu-head-item d-flex align-items-center">Club <i
+                                                      class='bx bx-chevron-down'></i></div>
+                                          <div class="menu-head-item d-flex align-items-center">Roadmap <i
+                                                      class='bx bx-chevron-down'></i></div>
+                                          <div class="menu-head-item d-flex align-items-center">Whitepaper <i
+                                                      class='bx bx-chevron-down'></i></div>
+            
+                                    </div> -->
       </div>
 
 
@@ -136,7 +248,7 @@
 
 
       <!-- main title section-->
-      <div class="row">
+      <div class="row ">
             <div class="col-1 test"></div>
             <div class="col-10 test ">
 
@@ -178,13 +290,13 @@
 
       <ul class="social-icons" id="social-menu-frame">
 
-            <li><i class='bx bxl-twitter'></i></li>
-            <li><i class='bx bx-minus turn'></i>
-            <li><i class='bx bxl-discord-alt'></i></li>
-            <li><i class='bx bx-minus turn'></i>
-            <li><i class='bx bxl-telegram'></i></li>
-            <li><i class='bx bx-minus turn'></i>
-            <li><i class='bx bxl-linkedin'></i></li>
+            <li><i class='bx bx-social bxl-twitter'></i></li>
+            <li><i class='bx bx-social bx-minus turn'></i>
+            <li><i class='bx bx-social bxl-discord-alt'></i></li>
+            <li><i class='bx bx-social bx-minus turn'></i>
+            <li><i class='bx bx-social bxl-telegram'></i></li>
+            <li><i class='bx bx-social bx-minus turn'></i>
+            <li><i class='bx bx-social bxl-linkedin'></i></li>
       </ul>
 
 
