@@ -266,7 +266,8 @@
                               transferred or
                               swapped
                               into all other
-                              cryptocurrencies.</p>
+                              cryptocurrencies. Your screen width is: <span id="width"></span> and your screen height
+                              is: <span id="height"></span></p>
                   </div>
 
 
@@ -275,6 +276,10 @@
       </div>
 
       <script>
+
+            document.getElementById('width').innerHTML = screen.width + ' , ' + window.innerWidth;
+            document.getElementById('height').innerHTML = screen.height + ' , ' + window.innerHeight;
+
             document.addEventListener('scroll', function () {
                   // document.getElementById('showHeight').innerHTML = scrollY;
 
