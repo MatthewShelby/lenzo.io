@@ -48,6 +48,8 @@
       <link href="assets/css/home.css" rel="stylesheet">
       <link href="assets/css/style.css" rel="stylesheet">
       <link href="assets/css/fonts.css" rel="stylesheet">
+      <link href="assets/css/nav.css" rel="stylesheet">
+      <link href="assets/css/social-menu.css" rel="stylesheet">
       <!-- Boxicons CSS -->
       <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -62,7 +64,27 @@
 
 
 
+      <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+            }
 
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                  if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                              }
+                        }
+                  }
+            }
+      </script>
 
       <!-- navigation bar -->
       <div class=" row fixed-top nav">
@@ -73,10 +95,26 @@
                         <div class="col-3 "> <img class="logo" src="assets/images/Elements/Lenzo logo.png" alt=""></div>
 
                         <div class="col-9 row float-end justify-content-end">
-                              <div class="menu-head-item d-flex align-items-center ">Finance <i
-                                          class='bx bx-chevron-down'></i></div>
-                              <div class="menu-head-item d-flex align-items-center">Features <i
-                                          class='bx bx-chevron-down'></i></div>
+                              <div class=" menu-head-item d-flex align-items-center dropbtn   " onclick="myFunction()">
+
+                                    Finance
+                                    <i class="bx bx-chevron-down dropbtn"></i>
+
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                          <a href="#swap" class="menu-sub-item">Swap</a>
+                                          <a href="#staking" class="menu-sub-item">Staking</a>
+                                          <a href="#tokenomics" class="menu-sub-item">Tokenomics</a>
+                                          <a href="#toekn-value" class="menu-sub-item">Toekn Value</a>
+                                          <a href="#transactions" class="menu-sub-item">Transactions</a>
+                                    </div>
+
+                              </div>
+
+                              <div class="menu-head-item d-flex align-items-center">Features
+                                    <i class='bx bx-chevron-down'></i>
+                              </div>
+
                               <div class="menu-head-item d-flex align-items-center">Club <i
                                           class='bx bx-chevron-down'></i></div>
                               <div class="menu-head-item d-flex align-items-center">Roadmap <i
@@ -88,7 +126,9 @@
                   </div>
             </div>
             <div class="col-1 test"> </div>
-
+            <!-- <div id="showHeight" class="fixed-top col-1">
+                  ?
+            </div> -->
       </div>
 
 
@@ -106,7 +146,7 @@
                               Benefits For <span> Holders </span><br>
                         </h1>
                         <div class=" btn-box d-flex my-4">
-                              <button type="button" class="btn1">Pre-sale</button>
+                              <button type="button" class="btn1">Pre - sale</button>
                               <button type="button" class="btn2">Metaverse </button>
                         </div>
                         <p class="text"> “Lenz” is an approved BEP20+ security crypto token. It can <br> unrestrictedly
@@ -121,7 +161,22 @@
             </div>
             <div class="col-1 test"></div>
       </div>
-      <ul class="social-icons">
+
+      <script>
+            document.addEventListener('scroll', function () {
+                  // document.getElementById('showHeight').innerHTML = scrollY;
+
+                  if (scrollY > 340 && scrollY < 600) {
+                        console.log(document.getElementById('social-menu-frame').style.top)
+
+                        var dis = 190;
+                        document.getElementById('social-menu-frame').style.top = dis + "px";
+                  }
+
+            })
+      </script>
+
+      <ul class="social-icons" id="social-menu-frame">
 
             <li><i class='bx bxl-twitter'></i></li>
             <li><i class='bx bx-minus turn'></i>
@@ -135,13 +190,14 @@
 
 
 
+      <div class="hight-30vh"></div>
 
       <!-- Metaverse section-->
       <div class="row">
             <div class="col-1 test"></div>
             <div class="col-10 test">
                   <!-- font is kameron -->
-                  <div class="row part-2">
+                  <div class="row ">
                         <div class="col-6">
                               <div>
                                     <img class="img-2" src="./assets/images/Objects/CIty-Object.png" alt="">
@@ -166,82 +222,33 @@
                               </div>
                         </div>
                   </div>
+
                   <div class="bg-2">
                         <img class="img-bg2" src="assets/images/Elements/Rectangle 8.png" alt="">
                   </div>
+                  <!-- <div class="hight-30vh"></div> -->
 
-                  <div class="row part-3 justify-content-center">
-                        <div class="col-5">
-                              <div class="card-p3">
+                  <div class="row  justify-content-center">
 
-                                    <img class="img-3" src="assets/images/Elements/Group 10.png" alt="">
-                                    <img class="hotel" src="assets/images/Objects/Hotel.png" alt="">
+                        <div class="col-5  card-out">
+                              <div class="card-p3 center-all ">
 
-                                    <!-- font is kadwa 700 -->
-                                    
+                                    <div class="card-img-frame row center-all">
+
+                                          <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
+                                          <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
+                                    </div>
+
+
                                     <div class="test-h3">
-                                          <h3 class="text title-part3">Democratic economical <br> structure</h3>
-                                    </div>
-                                    
-                                    
-
-
-                                    <!-- font is kadwa 400 -->
-                                    <p class="text text-part3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          Nunc aliquet turpis
-                                          eget mi
-                                          hendrerit
-                                          suscipit. Nullam ornare
-                                          pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
-                                          turpis
-                                          sagittis.
-                                          Nunc
-                                          porttitor tortor eu nisl
-                                          tincidunt, consequat posuere metus.</p>
-
-                              </div>
-                        </div>
-                        <div class="col-5">
-                              <div class="card-p3">
-
-                                    <img class="img-3" src="assets/images/Elements/Group 10.png" alt="">
-                                    <img class="town-hall" src="assets/images/Objects/Town Hall.png" alt="">
-
-                              
-                                          <div class="test-h3">
-                                                <h3 class="text title-part3">Ownership of metaverse <br> assets</h3>
-                                          </div>
-                                    
-
-                                    <p class="text text-part3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          Nunc aliquet turpis
-                                          eget mi
-                                          hendrerit
-                                          suscipit. Nullam ornare
-                                          pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
-                                          turpis
-                                          sagittis.
-                                          Nunc
-                                          porttitor tortor eu nisl
-                                          tincidunt, consequat posuere metus.</p>
-                              </div>
-                        </div>
-                        <div class="col-5">
-                              <div class="card-p3">
-
-                                    <img class="img-3" src="assets/images/Elements/Group 10.png" alt="">
-                                    <img class="hotel" src="assets/images/Objects/Hotel.png" alt="">
-
-                                    
-                                          <div class="test-h3">
-                                                <h3 class="text title-part3 ">Business services <br> for
-                                                      corporations
-                                                </h3>
-                              
+                                          <h4 class="text title-part3">Democratic economical <br> structure</h4>
                                     </div>
 
 
-                                    <p class="text text-part3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+
+                                    <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                           Nunc aliquet turpis
                                           eget mi
                                           hendrerit
@@ -255,21 +262,28 @@
 
                               </div>
                         </div>
-                        <div class="col-5">
-                              <div class="card-p3">
 
-                                    <img class="img-3" src="assets/images/Elements/Group 10.png" alt="">
-                                    <img class="town-hall" src="assets/images/Objects/Town Hall.png" alt="">
 
-                                    
-                                          <div class="test-h3">
-                                                <h3 class="text title-part3">Social events and <br>
-                                                      campaigns
-                                                </h3>
-                                          </div>
-                                    
+                        <div class="col-5  card-out">
+                              <div class="card-p3 center-all ">
 
-                                    <p class="text text-part3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <div class="card-img-frame row center-all">
+
+                                          <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
+                                          <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
+                                    </div>
+
+
+                                    <div class="test-h3">
+                                          <h4 class="text title-part3">Ownership Of Metaverse
+                                                Assets</h4>
+                                    </div>
+
+
+
+
+
+                                    <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                           Nunc aliquet turpis
                                           eget mi
                                           hendrerit
@@ -280,8 +294,85 @@
                                           Nunc
                                           porttitor tortor eu nisl
                                           tincidunt, consequat posuere metus.</p>
+
                               </div>
                         </div>
+                  </div>
+
+                  <div class="row  justify-content-center">
+
+                        <div class="col-5  card-out">
+                              <div class="card-p3 center-all ">
+
+                                    <div class="card-img-frame row center-all">
+
+                                          <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
+                                          <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
+                                    </div>
+
+
+                                    <div class="test-h3">
+                                          <h4 class="text title-part3">Business Services
+                                                For Corporations</h4>
+                                    </div>
+
+
+
+
+
+                                    <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                          Nunc aliquet turpis
+                                          eget mi
+                                          hendrerit
+                                          suscipit. Nullam ornare
+                                          pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
+                                          turpis
+                                          sagittis.
+                                          Nunc
+                                          porttitor tortor eu nisl
+                                          tincidunt, consequat posuere metus.</p>
+
+                              </div>
+                        </div>
+
+
+                        <div class="col-5  card-out">
+                              <div class="card-p3 center-all ">
+
+                                    <div class="card-img-frame row center-all">
+
+                                          <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
+                                          <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
+                                    </div>
+
+
+                                    <div class="test-h3">
+                                          <h4 class="text title-part3">Social Events And
+                                                Campaigns</h4>
+                                    </div>
+
+
+
+
+
+                                    <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                          Nunc aliquet turpis
+                                          eget mi
+                                          hendrerit
+                                          suscipit. Nullam ornare
+                                          pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
+                                          turpis
+                                          sagittis.
+                                          Nunc
+                                          porttitor tortor eu nisl
+                                          tincidunt, consequat posuere metus.</p>
+
+                              </div>
+                        </div>
+
+
+
+
                   </div>
             </div>
             <div class="col-1 test"></div>
@@ -305,7 +396,8 @@
                                     check
                                     the whitepaper, road map, and all
                                     of the
-                                    Tokenomics <br> and financial documents here...</p>
+                                    Tokenomics <br> and financial documents here...
+                              </p>
                               <div class="box-btn-2 text-center mt-5">
                                     <button type="button" class="btn-3">BUY</button>
                                     <button type="button" class="btn-4">Documents</button>

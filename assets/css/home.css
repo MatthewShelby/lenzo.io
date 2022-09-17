@@ -10,7 +10,7 @@
 }
 
 .test {
-      border: 1px red solid;
+      /* border: 1px red solid; */
 }
 
 .logo {
@@ -40,7 +40,7 @@
       color: gray;
 }
 
-.part1-h1{
+.part1-h1 {
       font-family: kameron;
       font-size: 80px;
 }
@@ -52,20 +52,21 @@
       color: white;
       margin-right: 15px;
       font-family: roboto;
+      font-size: larger;
+      font-weight: 700;
 }
 
-.btn2{
+.btn2 {
       border-radius: 30px;
       padding: 10px 60px;
       border-color: rgb(42, 208, 210);
       background-color: #000000;
       color: white;
       font-family: roboto;
+      font-size: larger;
+      font-weight: 700;
 }
 
-.bx {
-      font-size: 30px;
-}
 
 
 .nav {
@@ -73,101 +74,157 @@
       padding: 7px;
 }
 
-.turn {
-      rotate: 90deg;
-      font-size: 40px;
-}
 
-.social-icons {
 
-      background-color: rgba(255, 255, 255, 0.08);
-      border-radius: 2vw;
-      width: fit-content;
-      text-align: center;
-      margin: 2vw;
-      padding: 1vw;
-      list-style: none;
-}
-.content-2{
+
+.content-2 {
       margin-top: 10vh;
 }
-.content-2 h2{
+
+.content-2 h2 {
       font-family: kameron-bold;
       /* font-size: 40px; */
 }
-.content-2 span{
+
+.content-2 span {
       color: rgb(42, 208, 210);
 }
-.content-2 p{
+
+.content-2 p {
       font-family: kameron;
 }
-  
 
-.img-2{
-       width: 53vw; 
+
+.img-2 {
+      width: 53vw;
       /* width: 58vw; */
       margin-left: -8vw;
       margin-top: -22vh;
-} 
-.img-bg2{
-      margin-top: -46vh;
+}
+
+.img-bg2 {
+      margin-top: -57vh;
       margin-left: -9vw;
       z-index: -11 !important;
       position: absolute;
+      opacity: 0.4;
 }
-.card-p3{
+
+
+
+
+
+
+/*    ========== Cards in metaverse section ==========     */
+
+
+.card-out {
+      padding: 2vw;
+}
+
+.card-p3 {
       background-color: rgba(255, 255, 255, 0.08);
-      border-radius: 30px; 
+      border-radius: 30px;
+      padding: 2vw;
+      width: 100%;
 }
-.text{
+
+
+.card-img-frame {
+      margin-top: -20vh;
+}
+
+
+.card-img-back {
+      max-width: 100%;
+}
+
+.card-img-front {
+      /* position: relative; */
+      max-width: 70%;
+      margin: auto;
+      margin-top: -70%;
+}
+
+.title-part3 {
+      font-family: kadwa-bold-700;
+      font-weight: 700;
+      /* margin-top: -19.5vh; */
+      /* position: absolute; */
+      /* max-width: 50%; */
+}
+
+.card-text {
+      font-family: roboto;
+      font-weight: 400;
+      text-align: justify;
+      margin-top: 2vh;
+
+}
+
+.center-all {
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+
+
+
+
+
+
+
+
+.text {
       text-transform: capitalize;
 }
 
-.title-part3{
-      font-family: kadwa-bold-700;
-      font-weight: 700;
-      margin-top: -19.5vh;
-      position: absolute;
-      max-width: 100%;
-} 
-.test-h3{
-       display: flex;
-       justify-content: center;
-       /* align-items: center;   */
-       text-align: center;
+.test-h3 {
+      display: flex;
+      justify-content: center;
+      /* align-items: center;   */
+      text-align: center;
 }
 
-.text-part3{
+.text-part3 {
       font-family: kadwa-regular-400;
       text-align: center;
 }
-@font-face{
+
+@font-face {
       font-family: kadwa-bold-700;
       src: url("../fonts/kadwa/Kadwa-Bold.ttf");
       format: ttf;
-      
+
 }
-@font-face{
+
+@font-face {
       font-family: kadwa-regular-400;
       src: url("../fonts/kadwa/Kadwa-Regular.ttf");
       formar: ttf;
 }
-.img-3{
-      margin-left: 1.5vw;
+
+.img-3 {
+      /* margin-left: 1.5vw;
       margin-top: -4vh;
-      width: 30vw;
-} 
-.hotel{
+      width: 30vw; */
+      width: 60%;
+}
+
+.hotel {
       width: 15vw;
       margin-top: -63vh !important;
       margin-left: 9vw;
 }
-.town-hall{
+
+.town-hall {
       width: 18vw;
       margin-top: -65vh;
       margin-left: 8vw;
 }
-.btn-3{
+
+.btn-3 {
       border-radius: 30px !important;
       padding: 10px 70px !important;
       background-color: rgb(42, 208, 210);
@@ -175,7 +232,8 @@
       margin-right: 15px;
       font-family: roboto;
 }
-.btn-4{
+
+.btn-4 {
       border-radius: 30px;
       padding: 10px 50px;
       border-color: rgb(42, 208, 210);
@@ -183,17 +241,21 @@
       color: white;
       font-family: roboto;
 }
-.hight-30vh{
+
+.hight-30vh {
       height: 30vh;
 }
-.part4-h1{
+
+.part4-h1 {
       font-size: 60px;
       /* font-family: inter; */
       font-weight: 800;
 }
-.fw-bold{
+
+.fw-bold {
       margin-top: -2vh;
 }
-.text-part4{
+
+.text-part4 {
       margin-top: 9vh;
 }
