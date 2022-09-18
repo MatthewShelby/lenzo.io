@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 
 
@@ -56,50 +55,23 @@
 </head>
 
 <body>
-
-
-      <!-- globe background -->
       <div class="d-none d-lg-block">
-            <div id="g-12">
-                  <img src="assets/images/Elements/Group-12.png" alt="" id="g-12-img">
+            <div class="as-body oh">
+                  <div id="g-12">
+                        <img src="assets/images/Elements/Group-12.png" alt="" id="g-12-img">
+                  </div>
             </div>
       </div>
 
       <div class="d-md-block d-lg-none">
-            <div id="g-12-phone">
-                  <img src="assets/images/Elements/Group-12.png" alt="" id="g-img-phone">
+            <div class="as-body oh">
+                  <div id="g-12-phone as-body">
+                        <img src="assets/images/Elements/Group-12.png" alt="" id="g-img-phone" class="as-body">
+                  </div>
             </div>
       </div>
 
-
-
-      <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction2() {
-                  console.log('open finence')
-            }
-            function openFinance() {
-                  console.log('open finence')
-                  document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function (event) {
-                  if (!event.target.matches('.dropbtn')) {
-                        var dropdowns = document.getElementsByClassName("dropdown-content");
-                        var i;
-                        for (i = 0; i < dropdowns.length; i++) {
-                              var openDropdown = dropdowns[i];
-                              if (openDropdown.classList.contains('show')) {
-                                    openDropdown.classList.remove('show');
-                              }
-                        }
-                  }
-            }
-      </script>
-
-      <!-- navigation bar -->
+      <!-- <div class="col-12 sssd">sssd</div> -->
       <div class=" row fixed-top nav">
             <!-- Desktop nav -->
             <div class=" d-none d-lg-block   justify-content-center">
@@ -152,43 +124,43 @@
             </div>
 
 
-
             <!-- Phone nav -->
-            <div class="container  d-md-block d-lg-none col-xs-12 col-sm-12 col-md-12">
-                  <div class=" row  justify-content-between">
-                        <div class="col-xs-10 col-sm-10 col-md-10">
-                              <img class="logo-phone" src="assets/images/Elements/Lenzo logo.png" alt="">
+            <div class="d-md-block d-lg-none">
+                  <div class="   col-xs-12 col-sm-12 col-md-12 row">
+                        <div class="col-9 ">
+                              <img class="logo-phone" src="assets/images/Elements/Lenzo logo.png" alt=""
+                                    style="max-width: 50%;">
                         </div>
-                        <div class="col-xs-2 col-sm-2 col-md-2">
+                        <div class="col-2 ">
                               <a href="javascript:void(0);" onclick="openPhoneMenu()" id="menu-a"
                                     style="width: fit-content; min-height: fit-content;">
                                     <i class='bx bx-menu my-menu'></i>
                               </a>
                         </div>
                   </div>
-            </div>
 
-            <div class="container  d-md-block d-lg-none">
+                  <div class="container  d-md-block d-lg-none">
 
-                  <div id="myLinks" class="dropdown-content dropdown-content-phone">
+                        <div id="myLinks" class="dropdown-content dropdown-content-phone">
 
 
-                        <div class="menu-item-phone">Finance
-                              <i class='bx bx-my-phone bx-chevron-down'></i>
-                        </div>
+                              <div class="menu-item-phone">Finance
+                                    <i class='bx bx-my-phone bx-chevron-down'></i>
+                              </div>
 
-                        <div class="menu-item-phone">Features
-                              <i class='bx bx-my-phone bx-chevron-down'></i>
-                        </div>
+                              <div class="menu-item-phone">Features
+                                    <i class='bx bx-my-phone bx-chevron-down'></i>
+                              </div>
 
-                        <div class="menu-item-phone">Club
-                              <i class='bx bx-my-phone bx-chevron-down'></i>
-                        </div>
-                        <div class="menu-item-phone">Roadmap
-                              <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
-                        </div>
-                        <div class="menu-item-phone">Whitepaper
-                              <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
+                              <div class="menu-item-phone">Club
+                                    <i class='bx bx-my-phone bx-chevron-down'></i>
+                              </div>
+                              <div class="menu-item-phone">Roadmap
+                                    <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
+                              </div>
+                              <div class="menu-item-phone">Whitepaper
+                                    <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
+                              </div>
                         </div>
                   </div>
             </div>
@@ -217,8 +189,6 @@
 
 
 
-
-
       <!-- main title section-->
       <div class="row ">
             <div class="col-1 test"></div>
@@ -244,7 +214,7 @@
                               swapped
                               into all other
                               cryptocurrencies. </p>
-                        <!-- <p>Your screen width is: <span id="width"></span> and your screen height
+                        <p>Your screen width is: <span id="width"></span> and your screen height
                               is: <span id="height"></span></p>
                         <p>Test ov col visibility:</p>
                         <p class="d-block d-sm-none">Paragraph 1 <span> Visible only on xs </span></p>
@@ -253,7 +223,7 @@
                         <p class="d-none d-lg-block d-xl-none">Paragraph 4 <span> Visible only on lg </span></p>
                         <p class="d-none d-xl-block">Paragraph 5 <span> Visible only on xl </span></p>
                         <p class=" d-md-block d-lg-none">Paragraph 6 <span> Visible on xs, sm, md </span></p>
-                        <p class="d-none d-lg-block ">Paragraph 7 <span> Visible on lg, xl </span></p> -->
+                        <p class="d-none d-lg-block ">Paragraph 7 <span> Visible on lg, xl </span></p>
 
 
                   </div>
@@ -265,8 +235,8 @@
 
       <script>
 
-            // document.getElementById('width').innerHTML = screen.width + ' , ' + window.innerWidth;
-            // document.getElementById('height').innerHTML = screen.height + ' , ' + window.innerHeight;
+            document.getElementById('width').innerHTML = screen.width + ' , ' + window.innerWidth;
+            document.getElementById('height').innerHTML = screen.height + ' , ' + window.innerHeight;
 
             document.addEventListener('scroll', function () {
                   // document.getElementById('showHeight').innerHTML = scrollY;
@@ -297,218 +267,227 @@
 
       <div class="hight-30vh"></div>
 
+
+
+
+
+
       <!-- Metaverse section-->
       <div class="row">
             <div class="col-1 test"></div>
             <div class="col-10 test">
                   <!-- font is kameron -->
                   <div class="row ">
-                        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 col-md-12">
-                              <div class="d-none d-lg-block ">
-                                    <img class="img-2 " src="./assets/images/Objects/CIty-Object.png" alt="">
-                              </div>
-                              <div class="d-md-block d-lg-none ">
-                                    <img class="img-2-phone " src="./assets/images/Objects/CIty-Object.png" alt="">
-                              </div>
+                        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 col-md-12" ">
+                              <div class=" d-none d-lg-block ">
+                                    <img class=" img-2 " src=" ./assets/images/Objects/City-Obj-Main.png" alt="">
                         </div>
-                        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 col-md-12">
-                              <div class="content-2">
-                                    <h2 class="text"> Do <span> Virtual Work </span> in the <br> virtual world.
-                                          Make <br> <span> Real Money </span> for the <br> real life.</h2>
-
-                                    <p class="text mt-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.id
-                                          quis
-                                          <br>
-                                          lectuse nibh semper aliquam viverra suscipit blandit. cursus.
-                                    </p>
-                                    <!-- Vestibulum maximus
-                                          pretium erat
-                                          in
-                                          interdum.
-                                          Sed odio est,
-                                          pretium sed vehicula. -->
-                              </div>
-                        </div>
-                  </div>
-
-                  <div class="bg-2">
-                        <img class="img-bg2" src="assets/images/Elements/Rectangle 8.png" alt="">
-                  </div>
-                  <!-- <div class="hight-30vh"></div> -->
-                  <div class="d-md-block d-lg-none ">
-                        <br>
-                        <br>
-                        <br>
-                        <br><br>
-                  </div>
-                  <div class="row  justify-content-center">
-
-                        <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
-                              <div class="card-p3 center-all ">
-
-                                    <div class="card-img-frame row center-all">
-
-                                          <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
-                                          <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
-                                    </div>
-
-
-                                    <div class="test-h3">
-                                          <h4 class="text title-part3">Democratic economical <br> structure</h4>
-                                    </div>
-
-
-
-
-
-                                    <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          Nunc aliquet turpis
-                                          eget mi
-                                          hendrerit
-                                          suscipit. Nullam ornare
-                                          pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
-                                          turpis
-                                          sagittis.
-                                          Nunc
-                                          porttitor tortor eu nisl
-                                          tincidunt, consequat posuere metus.</p>
-
-                              </div>
-                        </div>
-
                         <div class="d-md-block d-lg-none ">
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                        </div>
-
-                        <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
-                              <div class="card-p3 center-all ">
-
-                                    <div class="card-img-frame row center-all">
-
-                                          <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
-                                          <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
-                                    </div>
-
-
-                                    <div class="test-h3">
-                                          <h4 class="text title-part3">Ownership Of Metaverse
-                                                Assets</h4>
-                                    </div>
-
-
-
-
-
-                                    <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          Nunc aliquet turpis
-                                          eget mi
-                                          hendrerit
-                                          suscipit. Nullam ornare
-                                          pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
-                                          turpis
-                                          sagittis.
-                                          Nunc
-                                          porttitor tortor eu nisl
-                                          tincidunt, consequat posuere metus.</p>
-
-                              </div>
+                              <img class="img-2-phone " src="./assets/images/Objects/City-Obj-Main.png" alt="">
                         </div>
                   </div>
-                  <div class="d-md-block d-lg-none ">
-                        <br>
-                        <br>
-                        <br>
-                        <br><br>
-                  </div>
-                  <div class="row  justify-content-center">
+                  <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 col-md-12">
+                        <div class="content-2">
+                              <h2 class="text"> Do <span> Virtual Work </span> in the <br> virtual world.
+                                    Make <br> <span> Real Money </span> for the <br> real life.</h2>
 
-                        <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
-                              <div class="card-p3 center-all ">
-
-                                    <div class="card-img-frame row center-all">
-
-                                          <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
-                                          <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
-                                    </div>
-
-
-                                    <div class="test-h3">
-                                          <h4 class="text title-part3">Business Services
-                                                For Corporations</h4>
-                                    </div>
-
-
-
-
-
-                                    <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          Nunc aliquet turpis
-                                          eget mi
-                                          hendrerit
-                                          suscipit. Nullam ornare
-                                          pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
-                                          turpis
-                                          sagittis.
-                                          Nunc
-                                          porttitor tortor eu nisl
-                                          tincidunt, consequat posuere metus.</p>
-
-                              </div>
+                              <p class="text mt-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.id
+                                    quis
+                                    <br>
+                                    lectuse nibh semper aliquam viverra suscipit blandit. cursus.
+                              </p>
+                              <!-- Vestibulum maximus
+                                                pretium erat
+                                                in
+                                                interdum.
+                                                Sed odio est,
+                                                pretium sed vehicula. -->
                         </div>
-
-                        <div class="d-md-block d-lg-none ">
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                        </div>
-                        <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
-                              <div class="card-p3 center-all ">
-
-                                    <div class="card-img-frame row center-all">
-
-                                          <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
-                                          <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
-                                    </div>
-
-
-                                    <div class="test-h3">
-                                          <h4 class="text title-part3">Social Events And
-                                                Campaigns</h4>
-                                    </div>
-
-
-
-
-
-                                    <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          Nunc aliquet turpis
-                                          eget mi
-                                          hendrerit
-                                          suscipit. Nullam ornare
-                                          pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
-                                          turpis
-                                          sagittis.
-                                          Nunc
-                                          porttitor tortor eu nisl
-                                          tincidunt, consequat posuere metus.</p>
-
-                              </div>
-                        </div>
-
-
-
-
                   </div>
             </div>
-            <div class="col-1 test"></div>
+
+            <div class="bg-2 d-none d-lg-block ">
+                  <img class="img-bg2" src="assets/images/Elements/Rectangle 8.png" alt="">
+            </div>
+            <!-- <div class="hight-30vh"></div> -->
+            <div class="d-md-block d-lg-none ">
+                  <br>
+                  <br>
+                  <br>
+                  <br><br>
+            </div>
+            <div class="row  justify-content-center">
+
+                  <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
+                        <div class="card-p3 center-all ">
+
+                              <div class="card-img-frame row center-all">
+
+                                    <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
+                                    <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
+                              </div>
+
+
+                              <div class="test-h3">
+                                    <h4 class="text title-part3">Democratic economical <br> structure</h4>
+                              </div>
+
+
+
+
+
+                              <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc aliquet turpis
+                                    eget mi
+                                    hendrerit
+                                    suscipit. Nullam ornare
+                                    pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
+                                    turpis
+                                    sagittis.
+                                    Nunc
+                                    porttitor tortor eu nisl
+                                    tincidunt, consequat posuere metus.</p>
+
+                        </div>
+                  </div>
+
+                  <div class="d-md-block d-lg-none ">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                  </div>
+
+                  <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
+                        <div class="card-p3 center-all ">
+
+                              <div class="card-img-frame row center-all">
+
+                                    <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
+                                    <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
+                              </div>
+
+
+                              <div class="test-h3">
+                                    <h4 class="text title-part3">Ownership Of Metaverse
+                                          Assets</h4>
+                              </div>
+
+
+
+
+
+                              <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc aliquet turpis
+                                    eget mi
+                                    hendrerit
+                                    suscipit. Nullam ornare
+                                    pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
+                                    turpis
+                                    sagittis.
+                                    Nunc
+                                    porttitor tortor eu nisl
+                                    tincidunt, consequat posuere metus.</p>
+
+                        </div>
+                  </div>
+            </div>
+            <div class="d-md-block d-lg-none ">
+                  <br>
+                  <br>
+                  <br>
+                  <br><br>
+            </div>
+            <div class="row  justify-content-center">
+
+                  <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
+                        <div class="card-p3 center-all ">
+
+                              <div class="card-img-frame row center-all">
+
+                                    <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
+                                    <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
+                              </div>
+
+
+                              <div class="test-h3">
+                                    <h4 class="text title-part3">Business Services
+                                          For Corporations</h4>
+                              </div>
+
+
+
+
+
+                              <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc aliquet turpis
+                                    eget mi
+                                    hendrerit
+                                    suscipit. Nullam ornare
+                                    pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
+                                    turpis
+                                    sagittis.
+                                    Nunc
+                                    porttitor tortor eu nisl
+                                    tincidunt, consequat posuere metus.</p>
+
+                        </div>
+                  </div>
+
+                  <div class="d-md-block d-lg-none ">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                  </div>
+                  <div class=" col-md-5 col-lg-5 col-xs-12 col-sm-12 col-md-12 card-out">
+                        <div class="card-p3 center-all ">
+
+                              <div class="card-img-frame row center-all">
+
+                                    <img class="card-img-back" src="assets/images/Elements/Group 10.png" alt="">
+                                    <img class="card-img-front" src="assets/images/Objects/Hotel.png" alt="">
+                              </div>
+
+
+                              <div class="test-h3">
+                                    <h4 class="text title-part3">Social Events And
+                                          Campaigns</h4>
+                              </div>
+
+
+
+
+
+                              <p class="text card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc aliquet turpis
+                                    eget mi
+                                    hendrerit
+                                    suscipit. Nullam ornare
+                                    pretium dolor at varius. Sed ultrices diam eu magna pretium, quis mollis
+                                    turpis
+                                    sagittis.
+                                    Nunc
+                                    porttitor tortor eu nisl
+                                    tincidunt, consequat posuere metus.</p>
+
+                        </div>
+                  </div>
+
+
+
+
+            </div>
+      </div>
+      <div class="col-1 test"></div>
 
       </div>
+
+
+
+
 
       <div class="hight-30vh"></div>
       <!-- Presale section -->
@@ -554,32 +533,35 @@
             </div>
             <div class="col-1 test"></div>
       </div>
-      <div class="hight-30vh"></div>
+
       <br>
-      <div class="hight-30vh"></div>
-      <!-- Enter the metaverse of decentralized Finances.
-
-      Lenzo.io provides infrastructure and services to make crypto transactions easier. The process of participation in
-      the
-      presale is easy with just a few clicks. Alongside this, we invite you to check the whitepaper, road map, and all
-      of the
-      Tokenomics and financial documents here...
-
-      $410K+USD
-      24 Hours trade volume
-
-
-      $6.7M+
-      Market cap @
-
-
-      BUY -> Financial documents -> -->
-
-
-      <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+      <br>
+      <br>
+      <hr style="color:white; ">
+      <br>
+      <br>
+      <div class="col-12">
+            <div class="col-6">
+                        <h6>Legalization</h6>
+                        <br>
+                        <h6>Corporation</h6>
+                        <br>
+                        <h6>Lenovo ride</h6>
+                        <br>
+            </div>
+      </div>
+      <h6>Legalization</h6>
+      <br>
+      <h6>Corporation</h6>
+      <br>
+      <h6>Lenovo ride</h6>
+      <br>
+      <br>
+      <ul>
+            <li> 1 </li>
+            <li> 2 </li>
+            <li> 3 </li>
+      </ul>
+      <p>@Copyright by Norenium 2022</p>
+      <hr style="color:white; ">
 </body>
-
-</html>

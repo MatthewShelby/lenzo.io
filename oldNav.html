@@ -1,0 +1,126 @@
+<div class=" row fixed-top nav">
+      <!-- Desktop nav -->
+      <div class=" d-none d-lg-block   justify-content-center">
+            <div class="row ">
+                  <div class="col-1 test">
+                  </div>
+                  <div class="col-10 test center-centery">
+                        <div class="col-12 row justify-content-between">
+                              <div class="col-3 "> <img class="logo" src="assets/images/Elements/Lenzo logo.png" alt="">
+                              </div>
+
+
+                              <div class="col-9 row float-end justify-content-end">
+                                    <div class=" menu-head-item d-flex align-items-center dropbtn   "
+                                          onclick="openFinance()">
+
+                                          Finance
+                                          <i class="bx bx-nav bx-chevron-down dropbtn"></i>
+
+
+                                          <div id="myDropdown" class="dropdown-content">
+                                                <a href="#swap" class="menu-sub-item">Swap</a>
+                                                <a href="#staking" class="menu-sub-item">Staking</a>
+                                                <a href="#tokenomics" class="menu-sub-item">Tokenomics</a>
+                                                <a href="#toekn-value" class="menu-sub-item">Toekn Value</a>
+                                                <a href="#transactions" class="menu-sub-item">Transactions</a>
+                                          </div>
+
+                                    </div>
+
+                                    <div class="menu-head-item d-flex align-items-center">Features
+                                          <i class='bx bx-nav  bx-chevron-down'></i>
+                                    </div>
+
+                                    <div class="menu-head-item d-flex align-items-center">Club <i
+                                                class='bx bx-nav  bx-chevron-down'></i></div>
+                                    <div class="menu-head-item d-flex align-items-center">Roadmap <i
+                                                class='bx bx-nav  bx-chevron-down'></i></div>
+                                    <div class="menu-head-item d-flex align-items-center">Whitepaper <i
+                                                class='bx bx-nav  bx-chevron-down'></i></div>
+
+                              </div>
+
+
+                        </div>
+                  </div>
+                  <!-- <div class="col-1 test"> </div> -->
+            </div>
+      </div>
+
+
+      <div class="sss">sldfnlsndflsnflsnf</div>
+      <!-- Phone nav d-md-block d-lg-none-->
+      <div class="   col-xs-12 col-sm-12 col-md-12 row">
+            <!-- <div class=" row  justify-content-between"> -->
+            <div class="sss">
+                  <p>Browser compatibility for these functions is pretty sparse as I'm writing this, but Chrome
+                        currently has it. It will get
+                        there, but look at the first option in this article if you need it right now. Now that we
+                        have
+                        these functions, it seems unlikely to me we'll ever get min-font-size and max-font-size in
+                        CSS, since
+                        the functions are almost more clear as-is.</p>
+            </div>
+
+
+            <!--                         
+                  <div class="col-xs-10 col-sm-10 col-md-10">
+                        <img class="logo-phone" src="assets/images/Elements/Lenzo logo.png" alt=""
+                              style="max-width: 50%;">
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-2">
+                        <a href="javascript:void(0);" onclick="openPhoneMenu()" id="menu-a"
+                              style="width: fit-content; min-height: fit-content;">
+                              <i class='bx bx-menu my-menu'></i>
+                        </a>
+                  </div> -->
+            <!-- </div> -->
+      </div>
+
+      <div class="container  d-md-block d-lg-none">
+
+            <div id="myLinks" class="dropdown-content dropdown-content-phone">
+
+
+                  <div class="menu-item-phone">Finance
+                        <i class='bx bx-my-phone bx-chevron-down'></i>
+                  </div>
+
+                  <div class="menu-item-phone">Features
+                        <i class='bx bx-my-phone bx-chevron-down'></i>
+                  </div>
+
+                  <div class="menu-item-phone">Club
+                        <i class='bx bx-my-phone bx-chevron-down'></i>
+                  </div>
+                  <div class="menu-item-phone">Roadmap
+                        <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
+                  </div>
+                  <div class="menu-item-phone">Whitepaper
+                        <!-- <i class='bx bx-my-phone bx-chevron-down'></i> -->
+                  </div>
+            </div>
+      </div>
+      <script>
+            function openPhoneMenu() {
+                  var x = document.getElementById("myLinks");
+
+                  if (x.style.display === "block") {
+                        x.style.display = "none";
+                  } else {
+                        x.style.display = "block";
+                  }
+            }
+            document.addEventListener('click', function (e) {
+                  var x = document.getElementById("myLinks");
+                  if (!x.contains(e.target) && (!document.getElementById('menu-a').contains(e.target))) {
+                        if (x.style.display === "block") {
+                              x.style.display = "none";
+                              //console.info(e.target)
+                        }
+                  }
+            })
+      </script>
+
+</div>

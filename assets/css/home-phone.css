@@ -5,7 +5,7 @@
 
 #g-img-phone {
       position: absolute;
-      max-width: 150%;
+      max-width: 100%;
       opacity: 0.4;
       z-index: -2;
 }
@@ -17,17 +17,23 @@
       /* max-width: 59%; */
 }
 
+.sssd {
+      background-color: #1d04aa;
+}
 
 .logo-phone {
-      max-width: 60%;
+      /* max-width: 60%; */
+      /* max-width: 10vw; */
+      /* display: none; */
       /* max-height: 5vh; */
+      /* margin-left: 10vw; */
 }
 
 .my-menu {
       color: rgb(42, 208, 210);
       font-size: 16vw !important;
       margin: 0;
-      position: absolute;
+      /* position: absolute; */
       /* top: 50%;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); */
@@ -93,7 +99,7 @@
 .img-2-phone {
       max-width: 100%;
       margin: auto;
-      scale: 2;
+      /* scale: 2; */
       margin-bottom: -10vh;
       /* width: 58vw; */
       /* margin-left: -8vw;

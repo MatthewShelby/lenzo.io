@@ -8,7 +8,14 @@ body {
       display: none;
 }
 
+.oh {
+      overflow-y: hidden;
+}
 
+.as-body {
+      width: 100%;
+      overflow-y: hidden;
+}
 
 /* Navigation bar items */
 .menu-bar {
